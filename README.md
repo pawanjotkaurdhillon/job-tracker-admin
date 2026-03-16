@@ -100,3 +100,19 @@ export const useFilteredJobs = () => {
 dispatch(addJob(formData));
 dispatch(addActivityLog({ text: "...", time: "just now", icon: "send" }));
 ```
+## 📸 Screenshots
+
+### Dashboard — Dark Mode
+![Dashboard Dark](public/screenshots/dashboard.png)
+
+### Dashboard — Light Mode
+![Dashboard Light](public/screenshots/dashboard-light.png)
+
+### Applications Table
+![Applications](public/screenshots/applications.png)
+
+### Kanban Board
+![Kanban](public/screenshots/kanban.png)
+
+### Reports
+![Reports](public/screenshots/reports.png)
