@@ -39,22 +39,26 @@ const Sidebar = () => {
 
       {/* Quick stats */}
       <div
-        className="rounded p-2 mb-4"
-        style={{ background: "rgba(255,255,255,0.05)", fontSize: "0.72rem" }}
-      >
-        <div className="d-flex justify-content-between text-muted mb-1">
-          <span>Total</span><span style={{ color: "white" }}>{stats.total}</span>
-        </div>
-        <div className="d-flex justify-content-between text-muted mb-1">
-          <span>Interviews</span><span style={{ color: "#fbbf24" }}>{stats.interviews}</span>
-        </div>
-        <div className="d-flex justify-content-between text-muted mb-1">
-          <span>Offers</span><span style={{ color: "#22c55e" }}>{stats.offers}</span>
-        </div>
-        <div className="d-flex justify-content-between text-muted">
-          <span>Response Rate</span><span style={{ color: "#818cf8" }}>{stats.responseRate}%</span>
-        </div>
-      </div>
+  className="rounded p-2 mb-4"
+  style={{ background: "rgba(255,255,255,0.05)", fontSize: "0.72rem" }}
+>
+  <div className="d-flex justify-content-between mb-1">
+    <span style={{ color: "rgba(255,255,255,0.6)" }}>Total</span>
+    <span style={{ color: "white" }}>{stats.total}</span>
+  </div>
+  <div className="d-flex justify-content-between mb-1">
+    <span style={{ color: "rgba(255,255,255,0.6)" }}>Interviews</span>
+    <span style={{ color: "#fbbf24" }}>{stats.interviews}</span>
+  </div>
+  <div className="d-flex justify-content-between mb-1">
+    <span style={{ color: "rgba(255,255,255,0.6)" }}>Offers</span>
+    <span style={{ color: "#22c55e" }}>{stats.offers}</span>
+  </div>
+  <div className="d-flex justify-content-between">
+    <span style={{ color: "rgba(255,255,255,0.6)" }}>Response Rate</span>
+    <span style={{ color: "#818cf8" }}>{stats.responseRate}%</span>
+  </div>
+</div>
 
       {/* Nav */}
       <nav className="flex-grow-1">

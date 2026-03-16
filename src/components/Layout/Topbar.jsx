@@ -23,9 +23,9 @@ const Topbar = ({ onAddJob }) => {
         >
           {VIEW_TITLES[activeView]}
         </h4>
-        <p className="text-muted small mb-0">
-          {stats.total} total · {stats.interviews} interviews · {stats.offers} offers
-        </p>
+        <p className="small mb-0" style={{ color: "var(--text-primary)", opacity: 0.65 }}>
+  {stats.total} total · {stats.interviews} interviews · {stats.offers} offers
+</p>
       </div>
       <button className="btn btn-sm btn-primary px-3" onClick={onAddJob}>
         + New Application
