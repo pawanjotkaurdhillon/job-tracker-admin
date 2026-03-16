@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+/* ── Reset & Base ───────────────────────────────── */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Scrollbar ──────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* ── Bootstrap Form Overrides ───────────────────── */
+.form-control,
+.form-select {
+  background: var(--input-bg) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border) !important;
+}
+
+.form-control::placeholder {
+  color: var(--text-muted) !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3) !important;
+  border-color: #6366f1 !important;
+}
+
+/* ── Table Overrides ────────────────────────────── */
+.table-hover tbody tr:hover {
+  background: var(--tag-bg) !important;
+}
+
+.table tbody tr {
+  background: transparent !important;
+}
+
+.table {
+  --bs-table-striped-bg: transparent;
+  --bs-table-hover-bg: var(--tag-bg);
+  --bs-table-border-color: var(--border);
+}
+
+th, td {
+  border-color: var(--border) !important;
+  vertical-align: middle;
+}
+
+/* ── Progress ───────────────────────────────────── */
+.progress {
+  background: var(--border) !important;
+}
+
+/* ── Navigation ─────────────────────────────────── */
+.nav-link {
+  color: rgba(255, 255, 255, 0.6) !important;
+  transition: color 0.2s, background 0.2s;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: white !important;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+  background: rgba(99, 102, 241, 0.25) !important;
+  color: #818cf8 !important;
+}
+
+/* ── Stat Card Hover ─────────────────────────────── */
+.stat-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ── Modal ───────────────────────────────────────── */
+.modal-content {
+  color: var(--text-primary);
+}
+
+/* ── btn-close color fix in dark mode ───────────── */
+.btn-close {
+  filter: var(--btn-close-filter, none);
+}
